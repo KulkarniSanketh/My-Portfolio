@@ -1,0 +1,514 @@
+/* The CSS code you provided is styling the appearance of a webpage. Here's a breakdown of what each
+part is doing: */
+
+
+body{
+    background-color: black;
+    color: white;  
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+/* Sidebar styles */
+#sidenav {
+    position: fixed;
+    left: 25%; /* Hidden off-screen */
+    top: 0;
+    width: 20%;
+    height: 35%;
+    background-color: black;
+    overflow-x: hidden;
+    color: white;
+    transition: left 0.6s ease;
+    display: none; /* Smooth slide transition */
+}
+
+#sidenav.active {
+    left: 0;
+    display: block; /* Slide into view */
+}
+
+/* Menu button style when sidebar is active */
+#menu_button.active {
+    transform: rotate(90deg); /* Example rotation effect */
+    margin-left: 18%;
+}
+
+#sidenavbar {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 1%;
+}
+
+#sidenavbar li {
+    padding: 4%;
+    text-align: left;
+}
+
+#sidenavbar li a {
+    color: white;
+    font-size: 0.8rem;
+    flex-wrap: wrap;
+    text-decoration: none;
+}
+
+.sidemenu {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+#menu_button {
+    transition: transform 0.6s ease, margin-left 0.3s ease; /* Smooth transition for both transform and margin-left */
+    width: 3%;
+    left: -2%;
+    margin-top: 2%;
+    border-radius: 15%;
+    height: 3%;
+    text-align: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    display: none;
+    position: fixed;
+}
+
+
+#image_menu{
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin: 10%;
+}
+#sidenavbar li{
+    padding-right: 4%;
+    list-style: none;
+    margin-top: 12%;
+}
+#sidenavbar li a{
+    text-decoration: none;
+    color: white; 
+    margin-top: 3%;
+}
+
+@media screen and (max-width: 490px){
+    nav{
+        display: none;
+    }
+    #link{
+        width: 2%;
+    }
+    #MyImage{
+        width: 5rem;
+        height: auto;
+    }
+    .sidemenu{
+        display: block;
+    }
+    .sidenav{
+        display: block;
+    }
+    #menu_button{
+        display: block;
+        width: 10%;
+        height: 10%;
+    }
+    
+    #image_menu{
+        width: 100%;
+    }
+}
+@media screen and (max-width:490px) {
+    #MyImage{
+        display: none;
+    }
+}
+#logo{
+    width: 4%;
+    height: auto;
+    padding-left: none;
+    padding-top: 10px;
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+    margin-right: 10px; 
+}
+#navbar li{
+    padding-right: 35px;
+    list-style: none;
+}
+
+#navbar li a{
+    text-decoration: none;
+    color: white; 
+}
+#navbar li a:hover{
+    color: greenyellow;
+}
+
+/* Home CSS */
+#home{
+       display: flex; 
+}
+#left_section{ 
+    width: 50%;
+    height: auto;
+    text-align: center;
+    padding-left: 5%;
+}
+#left_section h1{
+    margin-right: 5%;
+    font-size: 5vw;
+    text-align: center;
+}
+@media screen and (max-width: 768px) {
+    logo{
+        width: 0%;
+    }
+    
+}
+@media screen and (max-width:490px) {
+    .link{
+        display: none;
+    }
+}
+#left_section h3{
+    text-align: center;
+    flex-wrap: wrap; 
+    margin-right: 5%;
+    font-size: 3vw;
+}
+#left_section p{
+    text-align: center;
+    font-size: 3vw;
+    
+}
+#right_section{
+    width: 50%;
+}
+#right_section img{
+    width: 55%;
+    height: auto;
+    margin-top: 15%;
+    margin-left: 15%;
+    margin-bottom: 20px;
+    /* box-shadow: 1px 10px 15px rgba(250,113,33,0.925); */
+    /* filter: drop-shadow(1px 10px 15px rgba(250,113,33,0.925)); */
+}
+
+
+.logo{
+    display: flex;
+    justify-content: center;
+
+}
+.logo a img{
+    width: 50px;
+    height: auto;
+    align-items: center;
+    border: 1px solid white; 
+    margin-right: 3%;  
+}
+.logo a{
+    margin: 1%;
+}
+
+/* Section 2 Css */
+
+#about{
+    background-color: #f2f2f2;
+    color: black;
+    text-align: center; 
+    padding-top: 20px;
+    text-align: center;
+}
+#about_me_h2{
+    border: 2px solid black;
+    margin: 0 auto;
+    width: max-content;  
+    font-size: 100%;
+}
+
+#about p{
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 5%;
+    font: 500;
+}
+
+#explore{
+    display: flex;
+    flex-direction: row;
+}
+@media screen and (max-width: 450px){
+    #explore{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* Skills */
+
+
+.Images{
+    display: flex;
+    justify-content: space-around;
+}
+.Images img{
+    display: flex;
+    width: 4rem;
+    border: 2px solid black;
+    padding: 5px;
+}
+/* Section 3 */
+@media screen and (max-width: 340px) {
+    .Images img{
+        width: 2rem;
+    }
+    .Images small{
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 3vw;
+        text-wrap: wrap;  
+    }
+}
+#Skills{
+    border: 2px solid black;
+    width: max-content;
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+}
+#skills{ 
+    background-color: #f2f2f2;
+    color: white;
+    color: black;
+    text-align: center; 
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Section 4 Projects */
+
+/* Container for the projects */
+#projects {
+    background-color: #f2f2f2;
+    color: black;
+    padding-top: 20px;
+}
+
+#projects h2 {
+    text-align: center;
+    border: 2px solid black;
+    width: 30%;
+    margin: 0 auto;
+    border-radius: 5%;
+}
+
+/* Flip Container */
+.project_info {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    align-items: center; /* Adds 3D perspective */
+}
+
+@media screen and (max-width: 600px) {
+    .info1{
+        text-wrap: wrap;
+        font-size: x-small;
+        width: 90%;
+        margin-top: 2%;
+    }
+    .project_info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #projects h2{
+        font-size: small;
+    }
+}
+.info1 {
+    width: 35%;
+    height: 255px;
+    border: 2px solid black;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ;/* Smooth rotation */
+}
+
+/* Add a flipped class to rotate the card on click */
+.info1.flipped {
+    transform: rotateY(180deg);
+}
+
+.project_info div {
+    text-align: center;
+}
+
+/* Front and back faces */
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Hides the back side when not flipped */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+/* Styling the front */
+.front {
+    background-color: #f2f2f2;
+}
+
+/* Styling the back */
+.back {
+    background-color: #f2f2f2;
+    color: black;
+    transform: rotateY(180deg); /* Initially rotated, only visible when flipped */
+}
+
+/* Image inside the front div */
+.info1 img {
+    width: 50px;
+    height: auto;
+    margin-top: 10px;
+}
+
+
+ul li{
+    list-style: none;
+    padding-right: 40px;
+}
+.back button{
+    border: 2px solid black;
+    margin-bottom: 30px;
+    width: 120px;
+}
+button a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+
+
+/* Section 5 Contact */
+
+#contact{
+    background-color: #f2f2f2;
+    color: white;
+    color: black;
+    text-align: center; 
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#form{
+    width: 40%; 
+}
+#form input{
+    width: 80%;
+}
+#textarea{
+        width: 80%;
+        height: 100%;
+}
+@media screen and (max-width: 300px){
+    #Form{
+        width: 25%;
+        font-size: x-small;
+    }
+    input{
+        width: 20%;
+        font-size: x-small;
+    }
+    #textarea{
+        width: 80%;
+        order: 1;
+    }
+    #button{
+        width: 80%;
+        text-align: center;
+        align-items: center;
+    }
+    .footer_images a img{
+        width: 30%;
+    }
+}
+#contact_h3{
+    border: 2px solid black;
+    width: 150px;
+    border-radius: 25px;
+    margin-top:50px;
+    margin-bottom: 30px;
+    
+}
+
+form{
+    border: 2px solid black;
+    border-radius: 5%;
+    
+    justify-content: space-around;
+    width: max-content;
+}
+form input{
+    margin-left: 4px;
+    margin-right: 2px;
+}
+form button{
+    height: 30px;
+    width: auto;    
+    margin-bottom: 20px;
+}
+
+/* Footer Section */
+
+#footer{
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    background-color: black;
+    color: white !important;
+}
+#back_to_home{
+    border: 2px solid white;
+    width: 150px;
+    padding: 6px 6px 6px 6px;
+    border-radius: 25px;
+    margin-top:50px;
+    margin-bottom: 30px;
+    text-decoration: none;
+    color: white;
+}
+#back_to_home img{
+    width: 20px;
+}
+.footer_images{
+    display: flex;
+    justify-content: center;
+}
+.footer_images img{
+    width: 40px;
+    border: 2px solid white !important;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 15%;
+}

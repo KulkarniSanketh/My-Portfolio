@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanketh Kulkarni</title>
+    <link rel="icon" href="./Images/logo.png">
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body id="body">
+    <header id="header">
+        <nav>
+            <img src="./Images/logo.png" alt="Not Available" id="logo">
+            <ul id="navbar">
+                <li><a href="#body" id="default">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header> 
+    <section id="home">
+        <div id="right_section">
+            <div class="sidemenu">   
+                <button id="menu_button" onclick="sidebar()"><img src="./Images/menu.png" alt="NA" id="image_menu"></button>
+                <nav id="sidenav">
+                    <ul id="sidenavbar">
+                        <li><a href="#home" id="default">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <img src="./Images/logo.png" alt="Not Available" id="MyImage">
+        </div>
+        <div id="left_section">
+            <h3>Hi, I am</h3>
+            <h1 id="myname">Sanketh Kulkarni</h1>
+            <p>A full-stack web developer/ UI Designer</p>
+            <br>
+            <br>
+            <div class="logo">
+                <a href="mailto:shreesankethk@gmail.com" target="_blank" class="link">
+                    <img src="Images/insta_logo.png" alt="Not available">
+                </a>
+                <a href="https://www.linkedin.com/in/shree-sanketh-kulkarni-9b118325b/" target="_blank" class="link">
+                    <img src="Images/linkdin_logo.png" alt="Not Available">
+                </a>
+                <a href="https://github.com/KulkarniSanketh" target="_blank" class="link">
+                    <img src="./Images/github_logo.png" alt="Not Available">
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <h2 id="about_me_h2">ABOUT ME</h2>
+        <br>
+        <p>Hi, I’m Sanketh Kulkarni, a web developer skilled in front-end development with a strong foundation in data
+            structures and algorithms. I’m passionate about building responsive and user-friendly websites that balance
+            design and functionality.</p>
+        <br>
+        <h2>--------\\\///--------</h2>
+        <br>
+        <div id="explore">
+            <div class="design">
+                <h3>DESIGN</h3>
+                <p>I craft designs tailored to your vision, ensuring an intuitive and engaging user experience that
+                    reflects your brand.</p>
+            </div>
+            <div class="Development">
+                <h3>DEVELOPMENT</h3>
+                <p>I build robust, scalable solutions from the ground up, integrating the latest technologies to bring
+                    your ideas to life</p>
+            </div>
+        </div>
+        <div class="maintenance">
+            <h3>MAINTENANCE</h3>
+            <p>I provide ongoing support to keep your site running smoothly, with regular updates <br> and optimizations
+                for peak performance.</p>
+        </div>
+        <br>
+        <h2>--------\\\///--------</h2>
+        <br>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+
+        <h2 id="Skills">SKILLS</h2>
+        <h3>Using Now:</h3>
+        <div class="Images">
+            <div>
+                <img src="./Images/html_logo.png" alt="NA">
+                <br>
+                <small>HTML</small>
+            </div>
+            <div>
+                <img src="Images/css_logo.png" alt="NA"><br>
+                <small>CSS</small>
+            </div>
+            <div>
+                <img src="Images/js_logo.png" alt="NA">
+                <br>
+                <small>JAVA SCRIPT</small>
+            </div>
+            <div>
+                <img src="Images/mysql_logo.png" alt="NA">
+                <br>
+                <small>MYSQL</small>
+            </div>
+        </div>
+        <br>
+        <br>
+        <h3>Learning:</h3>
+        <div class="Images">
+            <div>
+                <img src="Images/bootstrap_logo.png" alt="NA"><br>
+                <small>BOOT STRAP</small>
+            </div>
+            <div>
+                <img src="Images/react_logo.png" alt="NA">
+                <br>
+                <small>REACT</small>
+            </div>
+            <div>
+                <img src="Images/mongodb_logo.png" alt="NA">
+                <br>
+                <small>MONGODB</small>
+            </div>
+            <div>
+                <img src="Images/nodejs_logo.png" alt="NA">
+                <br>
+                <small>NODE JS</small>
+            </div>
+        </div>
+        <br>
+        <br>
+        <h3>Other Skills:</h3>
+        <div class="Images">
+            <div>
+                <img src="Images/c_logo.png" alt="NA"><br><small>C </small>
+            </div>
+            <div>
+                <img src="Images/java-logo.png" alt="NA"><br><small>JAVA</small>
+            </div>
+            <div>
+                <img src="Images/python_logo.png" alt="NA">
+                <br>
+                <small>PYTHON</small>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project_info">
+            <div class="info1" onclick="toggleFlip(this)">
+                <div class="front">
+                    <p>"MY Notebook" is designed with students in mind, providing an all-in-one platform to manage your
+                        academic progress and stay organized. Explore powerful tools like the SGPA Calculator, To-Do
+                        List, and Grade Tracker to help you reach your goals.</p>
+                        <img src="./Images/open-book.png" alt="NA">
+                        <small>Click me</small>
+                </div>
+                <div class="back">
+                    <h3>Technologies Used:</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Node.js</li>
+                        <li>Express.js</li>
+                        <li>MongoDB</li>
+                    </ul>
+                    <br>
+                    <button id="my_notebook_btn"><a href="https://github.com/KulkarniSanketh/My-Notebook"
+                            target="_blank">Visit My Notebook</a></button>
+                </div>
+            </div>
+            <div class="info1" onclick="toggleFlip(this)">
+                <div class="front">
+                    <p>These are the simple web pages I made during practice using different languages</p>
+                    <img src="./Images/learning.png" alt="NA">
+                    <small>Click me</small>
+                </div>
+                <div class="back">
+                    <h3>Technologies Used:</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Node.js</li>
+                        <li>Express.js</li>
+                        <li>MongoDB</li>
+                    </ul>
+                    <br>
+                    <button id="budget_planner_btn"><a href="https://github.com/KulkarniSanketh/Games"
+                            target="_blank">Visit Budget Planner</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Gallery Section -->
+   
+
+
+
+    <!-- Section Contact -->
+
+    <section id="contact">
+        <h3 id="contact_h3">Contact</h3>
+
+        <form action="https://api.web3forms.com/submit" id="form" method="post" id="Form">
+            <input type="hidden" name="access_key" value="be2b2366-ba03-4def-b914-74ac7e054d27">
+            <p>Name:
+                <input name="Name" type="text" placeholder="Enter Your Name" required><sup>*</sup>
+            </p>
+            <p>
+                Phone:
+                <input name="Phone NO" type="number" placeholder="Enter Your Phone Number" required><sup>*</sup>
+            </p>
+            <p>
+                Email:
+                <input name="Email" type="email" placeholder="Enter Your Email" required><sup>*</sup>
+            </p>
+            <p>
+                <textarea name="Messgae" placeholder="Enter Your Message" required
+                 id="textarea"></textarea><sup></sup>
+            </p>
+            <br>
+            <button id="button">Submit</button>
+        </form>
+    </section>
+    <div id="footer">
+        <a href="#body" id="back_to_home">
+            Back to top <img src="up-arrow.png" alt="">
+        </a><br>
+        <br>
+        <div class="footer_images">
+            <a href="mailto:shreesankethk@gmail.com" target="_blank"><img src="Images/insta_logo.png"
+                    alt="NA"></a>
+            <a href="https://www.linkedin.com/in/shree-sanketh-kulkarni-9b118325b/" target="_blank"><img
+                    src="Images/linkdin_logo.png" alt="NA"></a>
+            <a href="https://github.com/KulkarniSanketh" target="_blank"><img src="Images/github_logo.png" alt="NA"></a>
+        </div>
+        <br>
+        <h5><b>@2024 Sanketh Kulkarni</b> all rights are reserved</h5>
+    </div>
+    <script>
+        function toggleFlip(element) {
+            element.classList.toggle('flipped');
+        }
+        function sidebar() {
+    // Toggle the active class on both sidenav and menu button
+    document.getElementById("sidenav").classList.toggle("active");
+    document.getElementById("menu_button").classList.toggle("active");
+        }
+
+</script>
+</body>
+
+</html>
